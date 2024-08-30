@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Number Coding</h1>
+
+    <script>
+        //swap using third variable
+        // let a=+prompt("Enter 1st number")
+        // let b=+prompt("Enter 2nd number")
+        // let c
+
+        // c=a
+        // a=b
+        // b=c
+
+        // console.log("swap numbers=",a,b)
+
+        //without using third variables
+        // let a=+prompt("Enter 1st number")
+        // let b=+prompt("Enter 2nd number")
+
+        // a=a+b
+        // b=a-b
+        // a=a-b
+
+        // console.log("Swap numbers=",a,b)
+
+        //count the length
+        //using method
+        // let num=+prompt("Enter a num")
+
+        // let len=num.toString().length
+        // console.log("Length =",len);
+
+        //without using variable
+        // let num=+prompt("Enter a num")
+        // let len=0
+        // while(num>0){
+        //     let rem=num%10
+        //     len++
+        //     num=Math.trunc(m=num/10)
+        // }
+        // console.log("Length=",len);
+
+
+        //Sum of digits
+        // let num=+prompt("Enter a num")
+        // let sum=0
+        // while(num>0){
+        //     let rem=num%10
+        //     sum+=rem
+        //     num=Math.trunc(num/10)
+        // }
+        // console.log("Sum=",sum);
+
+        //evensum & odd sum
+        // function countSum(num){
+        //     let evensum=0
+        //     let oddsum=0
+        //     while(num>0){
+        //         let rem=num%10
+        //         if(rem%2==0){
+        //             evensum+=rem
+        //         }
+        //         else{
+        //             oddsum+=rem
+        //         }
+        //         num=Math.trunc(num/10)
+        //     }
+        //     console.log("Evensum=",evensum,"Oddsum=",oddsum);  
+        // }
+        // countSum(12345)
+
+        //multiplication of every digit
+        // function multi(num){
+        //     let mul=1
+        //     while(num>0){
+        //         let rem=num%10
+        //         mul*=rem
+        //         num=Math.trunc(num/10)
+        //     }
+        //     console.log("Multiplication=",mul);
+        // }
+        // multi(2345)
+
+        //factorial
+        // function factorial(num){
+        //     let fact=1
+        //     for(let i=1;i<=num;i++){
+        //         fact*=i
+        //     }
+        //     return fact
+        // }
+        // let num=+prompt("Enter a number ")
+        // console.log(factorial(num));
+
+        //find sum of n natural numbers
+        // function sumNatural(){
+        //     let sum=0
+        //     for(let i=0;i<=num;i++){
+        //         sum+=i
+        //     }
+        //     console.log("Sum of natural no=",sum);
+        // }
+        // let num=+prompt("Enter a natural number")
+        // sumNatural(num)
+
+
+        //sum of factorial of every digit
+        // function sumFactorial(num) {
+        //     let sum = 0
+        //     while (num > 0) {
+        //         let rem = num % 10
+        //         let fact = 1
+        //         for (let i = 1; i <= rem; i++) {
+        //             fact *= i
+        //         }
+        //         sum += fact
+        //         num = Math.trunc(num / 10)
+
+        //     }
+        //     console.log(sum);
+        // }
+        // let num = +prompt("Enter a number")
+        // sumFactorial(num);
+
+
+        //reverse a num
+        // function revNum(num){
+        //     let sum=0
+        //     while(num>0){
+        //         let rem=num%10
+        //         sum=sum*10+rem
+        //         num=Math.trunc(num/10)
+        //     }
+        //     console.log(sum);
+
+        // }
+        // let num=+prompt("Enter a number")
+        // revNum(num)
+
+        //check no is  pallindrome or not
+        // function checkPallindrome(num){
+        //     let temp=num
+        //     let sum=0
+        //     while(num>0){
+        //         let rem=num%10
+        //         sum=sum*10+rem
+        //         num=Math.trunc(num/10)
+        //     }
+        //     if(sum==temp){
+        //         console.log("Number is Pallinddrome")
+        //     }else{
+        //         console.log("Number is not Pallindrome")
+        //     }
+        // }
+        // let num=+prompt("Enter a num")
+        // checkPallindrome(num)
+
+        //check year is leap year or not
+        // function checkLeapYear(year){
+        //     if(year%400==0 || year%100!=0 && year%4==0){
+        //         console.log("year is a leap year",year);
+        //     }else{
+        //         console.log("year is not a leap year"); 
+        //     }
+        // }
+        // let year=+prompt("Enter the year")
+        // checkLeapYear(year)
+
+        //fibonacci series
+        // function fibonacci(num){
+        //     let fn=0
+        //     let sn=1
+        //     console.log(fn,sn)
+        //     for(let i=3;i<=num;i++){
+        //         let nn=fn+sn
+        //          console.log(nn);
+        //         fn=sn
+        //         sn=nn
+        //     }
+
+        // }
+        // let num=+prompt("enter a number")
+        // fibonacci(num)
+
+        //print alternate fibonscci series
+        function checkFibonacci(num) {
+            let count = 1
+            let fn = 0
+            let sn = 1
+            console.log(fn)
+            for (let i = 3; i <= num*2 ; i++) {
+                let nn = fn + sn
+                sn = nn
+                fn = sn
+                if (count % 2 != 0) {
+                    console.log(nn)
+                    count++
+                }
+                else {
+                    count++
+                }
+            }
+        }
+        let num = +prompt("Enter a num")
+        checkFibonacci(num)
+
+    </script>
+</body>
+
+</html>
